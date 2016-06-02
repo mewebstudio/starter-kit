@@ -1,0 +1,37 @@
+@mixin db() {
+  display: block;
+}
+
+@mixin di() {
+  display: inline;
+}
+
+@mixin dib() {
+  display: inline-block;
+}
+
+@mixin relative-block() {
+  position: relative;
+  @include db;
+}
+
+@mixin absolute-block() {
+  position: absolute;
+  @include db;
+}
+
+@mixin fixed-block() {
+  position: fixed;
+  @include db;
+}
+
+@mixin mp-reset() {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin list-reset() {
+  @include relative-block;
+  @include mp-reset;
+  list-style: none;
+}

@@ -1,0 +1,31 @@
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap-compass";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../vendor/font-awesome/scss/font-awesome";
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "ext";
+
+body,
+html {
+  @include mp-reset;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+body {
+  background-color: #fff;
+  font-family: $font-family;
+
+  #wrapper {
+    @include relative-block;
+    @include mp-reset;
+
+    > h1 {
+      text-align: center;
+    }
+
+    //
+  }
+}
